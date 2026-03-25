@@ -1,5 +1,4 @@
 export const C = {
-<<<<<<< HEAD
   bg: "#0c0c0c",
   card: "#141414",
   card2: "#1a1a1a",
@@ -14,22 +13,11 @@ export const C = {
   accent: "#d4a825",
   purple: "#8b5cf6",
   blue: "#3b82f6",
-=======
-  bg: "#0c0c0c", card: "#151515", card2: "#1a1a1a", input: "#1c1c1c",
-  border: "#242424", text: "#eaeaea", sub: "#888", dim: "#505050",
-  green: "#34d399", red: "#f06272", yellow: "#f0b840",
-  accent: "#d4a825", purple: "#8b5cf6", blue: "#3b82f6",
-  orange: "#f97316", pink: "#ec4899",
->>>>>>> 37df68b24dab39bd39e9ad8c593d6e37ce55c391
 };
 
 export const BRANDS: Record<string, { name: string; color: string; bg: string; textColor?: string }> = {
   nubank: { name: "Nubank", color: "#8b2fd4", bg: "linear-gradient(135deg,#8b2fd4,#6b21a8)" },
-<<<<<<< HEAD
   c6: { name: "C6 Bank", color: "#ccc", bg: "linear-gradient(135deg,#2a2a2a,#111)", textColor: "#e5e5e5" },
-=======
-  c6: { name: "C6 Bank", color: "#1a1a1a", bg: "linear-gradient(135deg,#2a2a2a,#111)", textColor: "#e5e5e5" },
->>>>>>> 37df68b24dab39bd39e9ad8c593d6e37ce55c391
   santander: { name: "Santander", color: "#ec0000", bg: "linear-gradient(135deg,#ec0000,#b30000)" },
   inter: { name: "Inter", color: "#ff7a00", bg: "linear-gradient(135deg,#ff7a00,#e06500)" },
   itau: { name: "Itaú", color: "#ec7000", bg: "linear-gradient(135deg,#003a70,#002952)", textColor: "#ff8c00" },
@@ -47,7 +35,6 @@ export const CATS = [
   { id: "transporte", name: "Transporte", color: "#3b82f6" },
   { id: "saude", name: "Saúde", color: "#f06272" },
   { id: "assinaturas", name: "Assinaturas", color: "#34d399" },
-<<<<<<< HEAD
   { id: "educacao", name: "Educação", color: "#60a5fa" },
   { id: "compras", name: "Compras", color: "#ec4899" },
   { id: "lazer", name: "Lazer", color: "#a78bfa" },
@@ -67,18 +54,6 @@ export const daysInMonth = new Date(new Date().getFullYear(), currentMonth, 0).g
 export const daysLeft = daysInMonth - currentDay;
 export const fmtDate = (d: any, m: any) =>
   `${String(d || 1).padStart(2, "0")}/${String(m || currentMonth).padStart(2, "0")}`;
-=======
-  { id: "educacao", name: "Educação", color: "#3b82f6" },
-  { id: "compras", name: "Compras", color: "#ec4899" },
-  { id: "lazer", name: "Lazer", color: "#8b5cf6" },
-  { id: "outros", name: "Outros", color: "#888" },
-];
-
-export const fmt = (v: number) => (v || 0).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-export const pct = (v: number) => `${Math.round(v || 0)}%`;
-export const currentMonth = new Date().getMonth() + 1;
-export const fmtDate = (d: any, m: any) => `${String(d || 1).padStart(2, "0")}/${String(m || currentMonth).padStart(2, "0")}`;
->>>>>>> 37df68b24dab39bd39e9ad8c593d6e37ce55c391
 
 let _id = 100;
 export const uid = () => ++_id;
