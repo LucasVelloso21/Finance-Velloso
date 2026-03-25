@@ -5,7 +5,7 @@ import {
   LayoutDashboard, Wallet, CreditCard, Receipt, PiggyBank, TrendingUp,
   Settings, ChevronRight, ChevronLeft, ArrowUpRight, ArrowDownRight,
   Bell, User, Eye, EyeOff, Mail, Lock, Shield, X, Star, Zap,
-  Home, Car, UtensilsCrossed, GraduationCap, Wifi, Smartphone,
+  Home as HomeIcon, Car, UtensilsCrossed, GraduationCap, Wifi, Smartphone,
   ShoppingBag, Landmark, Banknote, Plus, Trash2, Edit3, ChevronDown,
   AlertTriangle, TrendingDown, Calendar, Target, Clock,
 } from "lucide-react";
@@ -511,7 +511,7 @@ function SavingsPage({ savings, setSavings }: any) {
   const [modal, setModal] = useState(false);
   const [label, setLabel] = useState(""); const [goal, setGoal] = useState(0); const [current, setCurrent] = useState(0);
   const total = savings.reduce((s: number, v: any) => s + v.current, 0);
-  const icons = [Shield, Star, Car, PiggyBank, Home, Target];
+  const icons = [Shield, Star, Car, PiggyBank, HomeIcon, Target];
   const colors = [C.green, C.yellow, C.blue, C.purple, C.accent, "#60a5fa"];
   return <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
