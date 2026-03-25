@@ -1,6 +1,10 @@
 {
   "name": "velloso-finance",
+<<<<<<< HEAD
   "version": "3.0.0",
+=======
+  "version": "2.0.0",
+>>>>>>> 37df68b24dab39bd39e9ad8c593d6e37ce55c391
   "private": true,
   "scripts": {
     "dev": "next dev",
